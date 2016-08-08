@@ -1,5 +1,5 @@
 #!/bin/bash
-GPIO=`ls /var/www/html/shome/gpio/`
+GPIO=`ls /var/www/gpio/`
 while true; do 
 	sleep 1
 	for TMP4324 in $GPIO
