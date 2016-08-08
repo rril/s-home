@@ -6,6 +6,6 @@ while true; do
 	do
 		echo ${GPIO} > /sys/class/gpio/export
 		echo "out" > /sys/class/gpio/gpio${GPIO}/direction
-		head -1 /var/www/html/shome/gpio/${GPIO} > /sys/class/gpio/gpio${GPIO}/value
+		head -1 /var/www/gpio/${GPIO} > /sys/class/gpio/gpio${GPIO}/value
 	done
 done
